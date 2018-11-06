@@ -22,10 +22,10 @@ def sequence(arrayOfNumbers):
                 for j in range(zero_count + 1):
                     if arrayOfNumbers[i + 1] < arrayOfNumbers[i] + zero_count + 2:
                         if arrayOfNumbers[i + 1] - arrayOfNumbers[i] == j + 1:
-                            sequence_count += j
+                            sequence_count += j + 1
                             sequence_count += zero_count - j
 
-                            zero_count -= j
+                            zero_count -= j + 1
                             sequencesArray.append(sequence_count)
                     else:
                         sequence_count += zero_count
@@ -33,7 +33,9 @@ def sequence(arrayOfNumbers):
                         sequence_count = 0
                         zero_count = temporary_zero_count
 
-
+    if arrayOfNumbers[n - 1] - arrayOfNumbers[n - 2] == 1:
+        sequence_count += zero_count
+        sequencesArray.append(sequence_count)
 
 
     sorting(sequencesArray)

@@ -3,7 +3,7 @@ from sequence import sequence
 from sortArray import sorting
 
 if __name__ == "__main__":
-    cards_list = [1, 2, 3, 4, 5, 7, 0, 0, 0, 9, 11, 55, 56, 58]
+    cards_list = [5, 4, 0, 0 ,0 , 0, 6, 10, 22, 23, 24, 25, 26, 27, 28]
     cards_list_without_dublicates = []
     for i in range(len(cards_list)):
         if cards_list[i] == 0:
