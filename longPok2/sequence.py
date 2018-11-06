@@ -35,7 +35,7 @@ def sequence(arrayOfNumbers):
 
 
 
-    print(sequencesArray)
+
     sorting(sequencesArray)
     l = len(sequencesArray)
     print sequencesArray[l - 1] + 1
